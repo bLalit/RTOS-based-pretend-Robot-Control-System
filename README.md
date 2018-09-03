@@ -1,6 +1,7 @@
 "# RTOS-based-pretend-Robot-Control-System" 
 
 IDE USED: IAR Embedded Workbench.
+
 Microcontroller Used: STM32F107 microcontroller development board
 
 There are three major components in this project: Robot Control Center, Robot Manager, Robots(upto 13 robots).
