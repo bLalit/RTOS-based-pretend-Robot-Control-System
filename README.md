@@ -1,9 +1,11 @@
 "# RTOS-based-pretend-Robot-Control-System" 
 
-IDE USED: IAR Embedded Workbench,
+IDE USED: IAR Embedded Workbench.
+Microcontroller Used: STM32F107 microcontroller development board
 
-The objective if the project was to implement a pretend robot control system on an STM32F107 microcontroller development board.
 There are three major components in this project: Robot Control Center, Robot Manager, Robots(upto 13 robots).
+
+Implemented a pretend robot control system for factory floor robots with an ARM Cortex M3 processor running Real Time Operating System(RTOS) - μC/OS-III for real time collision avoidance and path planning. The robot communication was implemented by robust custom written serial device drivers. Implementation of multi-threading with over more than 16 threads was achieved using the uC-OS III and efficient memory buffer pool management.
 
 All elements of the system are connected together in a network. They communicate over RF links. Each component on the network has a unique 8-bit address (0-255). Note that a destination address of zero means a broadcast message, which is received by both the Control Center and the Robot Manager.
 
